@@ -1,9 +1,9 @@
-import Project from "./components/Project.jsx";
+import ProjectSection from "./components/ProjectSection.jsx";
 
 function App() {
   return (
     <>
-      <Project></Project>
+      <ProjectSection />
     </>
   );
 }
