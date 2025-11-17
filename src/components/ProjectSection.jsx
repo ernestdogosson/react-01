@@ -4,9 +4,11 @@ import ProjectsData from "../data/ProjectData.jsx";
 function ProjectSection() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h2 className="text-center text-3xl md:text-4xl font-bold mb-12 text-gray-800">
-        Recent Projects
-      </h2>
+      <div class="mb-16 text-center">
+        <h3 className="text-sm text-blue-500">PROJECTS</h3>
+        <h2 className="text-4xl font-bold">My Recent Work</h2>
+        <h3 className="text-gray-600">A selection of projects I've built</h3>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <Project
           name={ProjectsData[0].name}
