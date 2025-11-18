@@ -1,34 +1,100 @@
+import profilepPic from "../assets/profilePic.jpg";
+
 function Home() {
   return (
-    <div>
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-slate-100 to-gray-100">
       <div
         id="home"
-        className="min-h-screen pt-24 px-8 flex justify-center items-center relative bg-white"
+        className="min-h-[80vh] pt-24 px-8 flex justify-center items-center relative"
       >
-        {/* <div className="w-72 h-72 bg-gradient-to-br from-slate-300 to-yellow-300 rounded-full blur-md absolute top-32 left-7 animate-spin"></div>
-          <div className="w-[400px] h-[400px] bg-gradient-to-br from-blue-200 to-purple-200 rounded-full blur-md absolute bottom-8 right-1/4 animate-pulse"></div>
-          <div className="w-32 h-32 bg-gradient-to-br from-teal-300 to-indigo-400 rounded-full blur-md absolute top-24 right-0 animate-bounce"></div>*/}
-
         <div className="z-10 text-center">
-          {/* <div className="w-48 h-48 bg-gray-400 rounded-full shadow-xl mb-8 border-4 border-white hover:scale-110 hover:rotate-6 overflow-hidden transition-all duration-500 mx-auto">
-              <img
-                src="colorful-sky-clouds-6016x3900-23267.png"
-                alt="colorful sky"
-                className="w-full h-full"
-              />
-            </div>*/}
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">Ernest Dogo</h1>
+          <div className="w-64 h-64 rounded-full overflow-hidden mb-6 border-4 border-gray-500">
+            <img
+              src={profilepPic}
+              alt="Profile Picture"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+          <h1 className="text-5xl font-bold text-gray-800 mb-4">Ernest Dogo</h1>
           <p className="text-2xl text-gray-600 mb-2">FrontEnd Developer</p>
           <p className="text-lg text-gray-500 mb-8">
             Building beautiful digital experiences
           </p>
-          <div className="flex justify-center gap-3">
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:scale-105 hover:shadow-lg hover:-translate-y-1 transition-all">
-              View My Work
-            </button>
-            <button className="bg-white text-gray-700 border px-4 py-2 rounded hover:scale-105 hover:shadow-lg hover:-translate-y-1 transition-all">
-              Download CV
-            </button>
+        </div>
+      </div>
+
+      <div className="py-12 bg-white border-y border-gray-300 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4">
+          <h3 className="text-center text-sm text-blue-500 mb-6 ">
+            TECHNOLOGIES & TOOLS
+          </h3>
+          <div className="relative flex overflow-hidden">
+            <div className="flex animate-scroll-smooth whitespace-nowrap">
+              <span className="text-lg inline-flex items-center gap-3 px-2">
+                <span className="text-orange-700 font-medium">HTML</span>
+                <span>&bull;</span>
+                <span className="text-blue-700 font-medium">CSS</span>
+                <span>&bull;</span>
+                <span className="text-amber-600 font-medium">JavaScript</span>
+                <span>&bull;</span>
+                <span className="text-cyan-700 font-medium">React</span>
+                <span>&bull;</span>
+                <span className="text-teal-700 font-medium">Tailwind</span>
+                <span>&bull;</span>
+                <span className="text-purple-700 font-medium">Bootstrap</span>
+                <span>&bull;</span>
+                <span className="text-red-700 font-medium">Git</span>
+                <span>&bull;</span>
+              </span>
+              <span className="text-lg inline-flex items-center gap-3 px-2">
+                <span className="text-orange-700 font-medium">HTML</span>
+                <span>&bull;</span>
+                <span className="text-blue-700 font-medium">CSS</span>
+                <span>&bull;</span>
+                <span className="text-amber-600 font-medium">JavaScript</span>
+                <span>&bull;</span>
+                <span className="text-cyan-700 font-medium">React</span>
+                <span>&bull;</span>
+                <span className="text-teal-700 font-medium">Tailwind</span>
+                <span>&bull;</span>
+                <span className="text-purple-700 font-medium">Bootstrap</span>
+                <span>&bull;</span>
+                <span className="text-red-700 font-medium">Git</span>
+                <span>&bull;</span>
+              </span>
+              <span className="text-lg inline-flex items-center gap-3 px-2">
+                <span className="text-orange-700 font-medium">HTML</span>
+                <span>&bull;</span>
+                <span className="text-blue-700 font-medium">CSS</span>
+                <span>&bull;</span>
+                <span className="text-amber-600 font-medium">JavaScript</span>
+                <span>&bull;</span>
+                <span className="text-cyan-700 font-medium">React</span>
+                <span>&bull;</span>
+                <span className="text-teal-700 font-medium">Tailwind</span>
+                <span>&bull;</span>
+                <span className="text-purple-700 font-medium">Bootstrap</span>
+                <span>&bull;</span>
+                <span className="text-red-700 font-medium">Git</span>
+                <span>&bull;</span>
+              </span>
+              <span className="text-lg inline-flex items-center gap-3 px-2">
+                <span className="text-orange-700 font-medium">HTML</span>
+                <span>&bull;</span>
+                <span className="text-blue-700 font-medium">CSS</span>
+                <span>&bull;</span>
+                <span className="text-amber-600 font-medium">JavaScript</span>
+                <span>&bull;</span>
+                <span className="text-cyan-700 font-medium">React</span>
+                <span>&bull;</span>
+                <span className="text-teal-700 font-medium">Tailwind</span>
+                <span>&bull;</span>
+                <span className="text-purple-700 font-medium">Bootstrap</span>
+                <span>&bull;</span>
+                <span className="text-red-700 font-medium">Git</span>
+                <span>&bull;</span>
+              </span>
+            </div>
           </div>
         </div>
       </div>
