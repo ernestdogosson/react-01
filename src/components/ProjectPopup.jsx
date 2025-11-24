@@ -18,7 +18,7 @@ function ProjectPopup({ project, onClose }) {
           </div>
 
           <div className="p-8 w-1/2 relative">
-            <div>
+            <div className="mb-2">
               <h3 className="text-lg font-bold text-gray-800 mb-2">
                 About This Project
               </h3>
@@ -27,25 +27,24 @@ function ProjectPopup({ project, onClose }) {
               </p>
             </div>
 
-            {project.details.features &&
-              project.details.features.length > 0 && (
-                <div>
-                  <h3 className="text-lg font-bold text-gray-800 mb-3">
-                    Key Features
-                  </h3>
-                  <ul className="space-y-2">
-                    {project.details.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start">
-                        <span className="text-blue-500 mr-2 mt-1">•</span>
-                        <span className="text-gray-600">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+            {project.details.features && (
+              <div className="mb-2">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">
+                  Key Features
+                </h3>
+                <ul className="space-y-2">
+                  {project.details.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-start">
+                      <span className="text-blue-500 mr-2 mt-1">•</span>
+                      <span className="text-gray-600">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {project.details.designNotes && (
-              <div>
+              <div className="mb-2">
                 <h3 className="text-lg font-bold text-gray-800 mb-2">
                   Design Notes
                 </h3>
